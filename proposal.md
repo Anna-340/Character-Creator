@@ -8,8 +8,10 @@
 ### The ideal outcome of this code is to provide artists like me with a cool tool to get ideas flowing and could also be used by DND players for making NPC's or even their own character. I would go into many different aspects of a character like their body type, skintone, weight, height, body markings etc. As for the minimum outcome for this project would be a simplified number of catagories for the character creator like only the head, eyes, nose, ears, mouth, legs, arms, body and what their job would be. 
 
 ### For milestones throughout the rest of the semester would be
-### - Week 12: Write diff catagories for character designer and plan out code
-### - Week 13: write code for the different head catagories
-### - Week 14: write code for the different body/arm/leg catagories
-### - Week 15: write code for the different job types
-### - Week 16: write code for the different  traits/personality/weapon
+###  - Week 12: Write diff catagories for character designer and plan out code
+###  - Week 13: write code for the different head catagories
+###  - Week 14: write code for the different body/arm/leg catagories
+###  - Week 15: write code for the different job types
+###  - Week 16: write code for the different  traits/personality/weapon
+
+## Link: https://github.com/Anna-340/Character-Creator
