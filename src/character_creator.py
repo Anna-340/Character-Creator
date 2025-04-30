@@ -44,4 +44,11 @@ class Jobs(Enum):
     BOTANIST = "Botanist"
     SMUGGLER = "Smuggler"
     PLANTGROWER = "Marijuana and Shroom Grower"
+    KNIGHT = "Knight"
+    ARTIST = "Artist"
+    MERCHANT = "Merchant"
+    SECURITY = "Security Guard"
+    CLOWN = "Circus Act"
+    
+
 
