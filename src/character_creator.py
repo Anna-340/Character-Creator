@@ -49,6 +49,13 @@ class Jobs(Enum):
     MERCHANT = "Merchant"
     SECURITY = "Security Guard"
     CLOWN = "Circus Act"
+
+    class PersonalityTraits(Enum):
+        HAPPY = "Happy"
+        DEPRESSED = "Depressed"
+        ANXIOUS = "Anxious;"
+        
+
     
 
 
