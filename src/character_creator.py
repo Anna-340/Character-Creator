@@ -63,7 +63,15 @@ class Jobs(Enum):
         BLUNT = "Blunt"
         TRUTHFUL = "Truthful"
         CRUEL = "Cruel"
-        
+        RIZZ = "Charisma"
+        MORBID = "Morbid"
+        COMEDIC = "Comedic"
+        SERIOUS = "Serious"
+        PLAYFUL = "Playful"
+        CHILDISH = "Childish"
+        PRIDEFUL = "Prideful"
+        ARROGANT = "Arrogant"
+        MYSTERIOUS = "Mysterious."
 
     
 
