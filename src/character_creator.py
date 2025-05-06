@@ -54,6 +54,15 @@ class Jobs(Enum):
         HAPPY = "Happy"
         DEPRESSED = "Depressed"
         ANXIOUS = "Anxious;"
+        EXTROVERTED = "Extroverted"
+        INTROVERTED = "Introverted"
+        LAIDBACK = "Laidback"
+        DETERMINED = "Determined"
+        STUBBORN = "Stubborn"
+        PUREHEARTED = "Pure Hearted"
+        BLUNT = "Blunt"
+        TRUTHFUL = "Truthful"
+        CRUEL = "Cruel"
         
 
     
