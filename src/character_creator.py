@@ -160,5 +160,13 @@ class CharacterCreator:
     def character_has_eyes(self):
         return random.choice(["Yes", "No"])
     
+    def character_eyebrows(self):
+        thickness = ["Thin", "Medium", "Thick", "Bushy"]
+        shape = ["Arched", "Steep Arch", "S-Shaped", "Rounded", "Straight",
+                     "Slit", "Soft Angled", "Curved Round", "Upward", "Tapered" "Natural"]
+        return f"{random.choice(thickness)}, {random.choice(shape)}"
+    
+        
+    
 
 
