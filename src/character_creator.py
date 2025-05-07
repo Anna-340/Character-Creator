@@ -76,7 +76,7 @@ class Jobs(Enum):
 class CharacterCreator: 
     def __init__(self, root):
         self.root = root
-        self.root.title{"Fantasy Character Creator! :D"}
+        self.root.title("Fantasy Character Creator! :D")
         self.root.geometry("800 x 700")
 
         self.character = {}
