@@ -84,3 +84,7 @@ class CharacterCreator:
         self.traits = ["Gender", "Age", "Height", "Skin Color", "Hair", "Has Eyes", "Eye Color", "Evebrows",
                        "Nose", "Lips", "Jawline", "Ears", "Horns", "Skin Texture", "Hands", "Wimgs", "Tail",
                        "Magic Class", "Job", "Personality", "Quirk"]
+        
+        self.stats = ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma", "Stealth"]
+
+        self.quirks = []
