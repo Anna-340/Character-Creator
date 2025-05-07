@@ -73,6 +73,8 @@ class Jobs(Enum):
         ARROGANT = "Arrogant"
         MYSTERIOUS = "Mysterious."
 
-    
-
-
+class CharacterCreator: 
+    def __init__(self, root):
+        self.root = root
+        self.root.title{"Fantasy Character Creator! :D"}
+        self.root.geometry("800 x 700")
