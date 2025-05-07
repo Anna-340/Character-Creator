@@ -109,6 +109,14 @@ class CharacterCreator:
 
         #Displaying Traits
         self.trait_frame = ttk.LabelFrame(self.main_frame, text= "Character Trait")
-        self.trait_frame.pack(pady= 5)
+        self.trait_frame.pack(fill= tk.X, pady= 10)
 
+        self.trait_name_label = ttk.Label(self.trait_frame, text= "", front= ("Arial", 12))
+        self.trait_name_label.pack(pady= 5)
+
+        self.trait_value_label = ttk.Label(self.trait_frame, text= "", font= ("Arial", 14, "bold"))
+        self.trait_value_label.pack(pady= 10)
         
+
+
+
