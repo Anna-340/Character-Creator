@@ -103,3 +103,12 @@ class CharacterCreator:
 
         self.main_frame = ttk.Frame(self.root, padding= "20") #The main frame
         self.main_frame.pack(fill= tk.BOTH, expand= True)
+
+        #The TITLE 
+        ttk.Label(self.main_frame, text= "Fantasy Character Creator! :D", font= ("Arial", 16, "bold")).pack(pady= 10)
+
+        #Displaying Traits
+        self.trait_frame = ttk.LabelFrame(self.main_frame, text= "Character Trait")
+        self.trait_frame.pack(pady= 5)
+
+        
