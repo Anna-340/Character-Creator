@@ -180,6 +180,11 @@ class CharacterCreator:
         shape = ["Diamond", "Heart-Shaped", "Square", "Round", "Oval", "Triangular", "Oblong", "Narrow",]
         return random.choice(shape)
         
+    def character_ears(self):
+        size = ["Small", "Medium", "Large"]
+        shape = ["Square", "Pointed", "Narrow", "Free-Lobe", "Attached-Lobe", "Elven", "Dwarf", "Gnome",
+                 "Kender", "Half-Elf", "Orc", "Half-Orc", "Draconic", "Twilight-Elf"]
+        return f"{random.choice(size)}, {random.choice(shape)}"
     
 
 
