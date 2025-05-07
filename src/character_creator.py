@@ -93,4 +93,5 @@ class CharacterCreator:
                        "Over complicates things", "Laughs at the wrong times", "Bad at remembering names", 
                        "Obsessive with organizing thing", "Can't keep eye contact for long periods of time", 
                         "Always pops their joints", "Fear of heights", "Scared of the dark", "Has a sweet tooth",
-                         "Judgey of others", "Sleepwalker", "Very blunt", "Nail biter"]
+                         "Judgey of others", "Sleepwalker", "Very blunt", "Nail biter", 
+                         "Steals other peoples food when they aren't looking"]
