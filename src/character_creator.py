@@ -143,5 +143,14 @@ class CharacterCreator:
                   "Dark Blue", "Galaxy", "Rainbow", "Pale Blue Fading to Black at the Tips",
                   "Turquoise", "Albaster", "Aubrun"]
         return random.choice(colors)
+    
+    def character_hair(self):
+        colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Pink","Strawberry Blond", "White", 
+                  "Black", "Raisin", "Liberty", "Chestnut", "Silver", "Dark Brown", "Golden Brown", "Blond",
+                   "Sunset", "Honey", "Rose"]
+        length = ["Bald", "Ear Tip Length", "Shoulder-length", "Upper-back", "Lower-back", "Knee-length", 
+                  "Body-length", "Short", "Medium", "Long"]
+        return f"{random.choice(colors)}, {random.choice(length)}"
+    
 
 
