@@ -116,7 +116,14 @@ class CharacterCreator:
 
         self.trait_value_label = ttk.Label(self.trait_frame, text= "", font= ("Arial", 14, "bold"))
         self.trait_value_label.pack(pady= 10)
-        
+
+        #DA Buttons for UI
+        self.button_frame = ttk.Frame(self.main_frame)
+        self.button_frame.pack(pady= 20)
+
+        self.regenerate_button = ttk.Button(self.button_frame, text= "Re-roll Trait", command=self.regenerate_trait)
+        self.regenerate_button.pack(side= tk.LEFT, padx= 10)
+
 
 
 
