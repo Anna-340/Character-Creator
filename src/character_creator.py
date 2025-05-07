@@ -148,8 +148,8 @@ class CharacterCreator:
         colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Pink","Strawberry Blond", "White", 
                   "Black", "Raisin", "Liberty", "Chestnut", "Silver", "Dark Brown", "Golden Brown", "Blond",
                    "Sunset", "Honey", "Rose"]
-        length = ["Bald", "Ear Tip Length", "Shoulder-length", "Upper-back", "Lower-back", "Knee-length", 
-                  "Body-length", "Short", "Medium", "Long"]
+        length = ["Bald", "Ear Tip Length", "Shoulder-Length", "Upper-Back", "Lower-Back", "Knee-Length", 
+                  "Body-Length", "Short", "Medium", "Long"]
         return f"{random.choice(colors)}, {random.choice(length)}"
     
     def character_eye_color(self):
@@ -176,6 +176,8 @@ class CharacterCreator:
         shape = ["Oval", "Wide", "Heart-Shaped", "Bow-Shaped", "Round", "Cupid's Bow", "Downward-Turned"]
         return f"{random.choice(lip_thickness)}, {random.choice(shape)}"
     
+    def character_jawline(self):
+        shape = ["Diamond", "Heart-Shaped", ]
     
         
     
