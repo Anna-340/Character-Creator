@@ -133,4 +133,9 @@ class CharacterCreator:
         self.stats_frame = ttk.LabelFrame(self.main_frame, text= "Character Stats!")
         self.quirk_frame = ttk.LabelFrame(self.main_frame, text= "Character Quirk")
 
+        #Restart Button to create a new character!
+
+        self.start_over_button = ttk.Button(self.main_frame, text= "Create Another Character!", command=self.start_over)
+        
+
 
