@@ -87,4 +87,10 @@ class CharacterCreator:
         
         self.stats = ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma", "Stealth"]
 
-        self.quirks = []
+        self.quirks = ["Snors louldy when sleeping", "Fidgets with thumbs when nervous", "Hums when thinking", 
+                       "Sticks tounge out when focused", "Talks to themselves", "Collects things off the ground",
+                       "Hates when people smack", "Always cold", "Always hot", "Always late", "Always early", 
+                       "Over complicates things", "Laughs at the wrong times", "Bad at remembering names", 
+                       "Obsessive with organizing thing", "Can't keep eye contact for long periods of time", 
+                        "Always pops their joints", "Fear of heights", "Scared of the dark", "Has a sweet tooth",
+                         "Judgey of others", "Sleepwalker", "Very blunt", "Nail biter"]
