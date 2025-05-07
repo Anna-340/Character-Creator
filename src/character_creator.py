@@ -166,6 +166,14 @@ class CharacterCreator:
                      "Slit", "Soft Angled", "Curved Round", "Upward", "Tapered" "Natural"]
         return f"{random.choice(thickness)}, {random.choice(shape)}"
     
+    def character_nose(self):
+        shape = ["Aquiline", "Fleshy", "Straight", "Button", "Snub", "Hawk", "Roman", "Nubian", "Flat",
+                  "Turned-up"]
+        return random.choice(shape)
+    
+    def character_lips(self):
+        
+    
         
     
 
