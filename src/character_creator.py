@@ -76,7 +76,7 @@ class Jobs(Enum):
 class CharacterCreator: 
     def __init__(self, root):
         self.root = root
-        self.root.title("Fantasy Character Creator! :D")
+        self.root.title("Fantasy Character Creator! :D") 
         self.root.geometry("800 x 700")
 
         self.character = {}
@@ -100,6 +100,6 @@ class CharacterCreator:
         self.next_trait()
     
     def create_widgets(self):
-        
-        self.main_frame = ttk.Frame(self.root, padding= "20")
+
+        self.main_frame = ttk.Frame(self.root, padding= "20") #The main frame
         self.main_frame.pack(fill= tk.BOTH, expand= True)
