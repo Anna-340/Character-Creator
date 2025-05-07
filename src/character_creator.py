@@ -152,5 +152,13 @@ class CharacterCreator:
                   "Body-length", "Short", "Medium", "Long"]
         return f"{random.choice(colors)}, {random.choice(length)}"
     
+    def character_eye_color(self):
+        colors = ["Brown", "Green", "Blue", "Completely Black", "Completely White", "Hazel", "Amber", "Gray",
+                  "Violet", "Gold", "Silver", "Agate", "Heterochromia"]
+        return random.choice(colors)
+    
+    def character_has_eyes(self):
+        return random.choice(["Yes", "No"])
+    
 
 
