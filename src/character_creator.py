@@ -125,7 +125,7 @@ class CharacterCreator:
         self.regenerate_button.pack(side= tk.LEFT, padx= 10)
 
         #Progression of Character Traits
-        self.progress_label = ttk.Label(self.main_frame, text= f"Progress; 0/{len{self.traits}} traits completed")
+        self.progress_label = ttk.Label(self.main_frame, text= f"Progress; 0/{len(self.traits)} traits completed")
         self.progress_label.pack(pady= 10)
 
         #The Character Display
