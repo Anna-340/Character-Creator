@@ -95,3 +95,6 @@ class CharacterCreator:
                         "Always pops their joints", "Fear of heights", "Scared of the dark", "Has a sweet tooth",
                          "Judgey of others", "Sleepwalker", "Very blunt", "Nail biter", 
                          "Steals other peoples food when they aren't looking"]
+        
+        self.create_widgets()
+        self.next_trait()
