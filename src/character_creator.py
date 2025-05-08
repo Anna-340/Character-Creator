@@ -212,10 +212,11 @@ class CharacterCreator:
         return random.choice(texture)
     
     def character_hands(self):
-        fingers = [ "4 Fingers", "5 Fingers", "6 Fingers"]
+        fingers = ["4 Fingers", "5 Fingers", "6 Fingers"]
         type = ["Thick", "Short", "Long", "Slender", "Calloused", "Elegant", "Clawed", "Stubby"]
         return f"{random.choice(fingers)}, {random.choice(type)}"
     
     def character_tail(self):
         if random.random() < .25:
             size = ["Small", "Medium", "Large"]
+            type = [""]
