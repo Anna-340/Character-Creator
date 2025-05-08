@@ -190,5 +190,7 @@ class CharacterCreator:
         if random.random() < 0.25:
             number = random.randint(1, 4)
             size = ["Small", "Medium", "Large"]
-            shape = 
+            type = ["Draconic", "Antler", "Goat", "Markhor", "Pronghorn", "Orix", "Jacob-Sheep", "Chousingha",
+                    "Bharal", "Hartebeest", "Spike", "Muskox", "Gnu", "Tur", "Gazelle", "Ibex", "Moose",
+                    "Mule-Deer", "Bull", "Long", "Fallow-Deer"]
 
