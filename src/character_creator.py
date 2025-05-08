@@ -188,12 +188,12 @@ class CharacterCreator:
     
     def character_horns(self):
         if random.random() < 0.25:
-            number = random.randint(1, 4)
+    
             size = ["Small", "Medium", "Large"]
             type = ["Draconic", "Antler", "Goat", "Markhor", "Pronghorn", "Orix", "Jacob-Sheep", "Chousingha",
                     "Bharal", "Hartebeest", "Spike", "Muskox", "Gnu", "Tur", "Gazelle", "Ibex", "Moose",
                     "Mule-Deer", "Bull", "Long", "Fallow-Deer", "Unicorn", "Sheep", "Mouflon", "Water-Buffalo"]
-            return f"{number} {random.choice(size)}, {random.choice(type)} Horns"
+            return f"{random.choice(size)}, {random.choice(type)} Horns"
         return "None"
     
     def character_wings(self):
@@ -203,7 +203,7 @@ class CharacterCreator:
                     "Insect", "Leathery", "Furry", "Flower", "Plant", "Rock", "Water", "Cloud", "Galaxy", 
                     "Star", "Flame", "Beetle", "Futuristic", "Translucent", "Metal", "3 Pairs of Angel Wings", 
                     "2 Pairs of Angel Wings" ]
-            return f"{size} {random.choice(size)} Wings ({random.choice(type)})"
+            return f"{random.choice(size)} Wings ({random.choice(type)})"
         return "None"
     
     def character_skin_texture(self):
@@ -215,3 +215,7 @@ class CharacterCreator:
         fingers = [ "4 Fingers", "5 Fingers", "6 Fingers"]
         type = ["Thick", "Short", "Long", "Slender", "Calloused", "Elegant", "Clawed", "Stubby"]
         return f"{random.choice(fingers)}, {random.choice(type)}"
+    
+    def character_tail(self):
+        if random.random() < .25:
+            size = ["Small", "Medium", "Large"]
