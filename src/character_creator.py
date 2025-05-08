@@ -183,8 +183,12 @@ class CharacterCreator:
     def character_ears(self):
         size = ["Small", "Medium", "Large"]
         shape = ["Square", "Pointed", "Narrow", "Free-Lobe", "Attached-Lobe", "Elven", "Dwarf", "Gnome",
-                 "Kender", "Half-Elf", "Orc", "Half-Orc", "Draconic", "Twilight-Elf"]
+                 "Kender", "Half-Elf", "Orc", "Half-Orc", "Draconic", "Twilight-Elf", "Aquatic"]
         return f"{random.choice(size)}, {random.choice(shape)}"
     
-
+    def character_horns(self):
+        if random.random() < 0.25:
+            number = random.randint(1, 4)
+            size = ["Small", "Medium", "Large"]
+            shape = 
 
