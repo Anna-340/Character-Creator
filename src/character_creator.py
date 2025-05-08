@@ -210,3 +210,8 @@ class CharacterCreator:
         texture = ["Clear", "Acne", "Scars", "Freckles", "Birthmarks", "Fur", "Scales", "Tattoos", "Moles", 
                    "Vitiligo"]
         return random.choice(texture)
+    
+    def character_hands(self):
+        fingers = [ "4 Fingers", "5 Fingers", "6 Fingers"]
+        type = ["Thick", "Short", "Long", "Slender", "Calloused", "Elegant", "Clawed", "Stubby"]
+        return f"{random.choice(fingers)}, {random.choice(type)}"
