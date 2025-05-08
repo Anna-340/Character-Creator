@@ -195,4 +195,9 @@ class CharacterCreator:
                     "Mule-Deer", "Bull", "Long", "Fallow-Deer", "Unicorn", "Sheep", "Mouflon", "Water-Buffalo"]
             return f"{number} {random.choice(size)}, {random.choice(type)} horns"
         return "None"
-
+    
+    def character_wings(self):
+        if random.random() > .25:
+            size = ["Small", "Medium", "Large", "Massive"]
+            type = ["Crystal", "Withered", "Dragon", "Bat", "Butterfly", "Moth", "Dragonfly", "Angel", "Bird",
+                    "Insect", "Leathery", "Furry", "Flower", "Plant", "Rock", "Water"]
