@@ -200,4 +200,6 @@ class CharacterCreator:
         if random.random() > .25:
             size = ["Small", "Medium", "Large", "Massive"]
             type = ["Crystal", "Withered", "Dragon", "Bat", "Butterfly", "Moth", "Dragonfly", "Angel", "Bird",
-                    "Insect", "Leathery", "Furry", "Flower", "Plant", "Rock", "Water"]
+                    "Insect", "Leathery", "Furry", "Flower", "Plant", "Rock", "Water", "Cloud", "Galaxy", 
+                    "Star", "Flame", "Beetle", "Futuristic", "Translucent", "Metal", "3 Pairs of Angel", 
+                    "2 Pairs of Angel" ]
