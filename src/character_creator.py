@@ -205,3 +205,8 @@ class CharacterCreator:
                     "2 Pairs of Angel Wings" ]
             return f"{size} {random.choice(size)} Wings ({random.choice(type)})"
         return "None"
+    
+    def character_skin_texture(self):
+        texture = ["Clear", "Acne", "Scars", "Freckles", "Birthmarks", "Fur", "Scales", "Tattoos", "Moles", 
+                   "Vitiligo"]
+        return random.choice(texture)
