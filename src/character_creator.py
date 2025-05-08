@@ -193,7 +193,7 @@ class CharacterCreator:
             type = ["Draconic", "Antler", "Goat", "Markhor", "Pronghorn", "Orix", "Jacob-Sheep", "Chousingha",
                     "Bharal", "Hartebeest", "Spike", "Muskox", "Gnu", "Tur", "Gazelle", "Ibex", "Moose",
                     "Mule-Deer", "Bull", "Long", "Fallow-Deer", "Unicorn", "Sheep", "Mouflon", "Water-Buffalo"]
-            return f"{number} {random.choice(size)}, {random.choice(type)} horns"
+            return f"{number} {random.choice(size)}, {random.choice(type)} Horns"
         return "None"
     
     def character_wings(self):
@@ -201,5 +201,7 @@ class CharacterCreator:
             size = ["Small", "Medium", "Large", "Massive"]
             type = ["Crystal", "Withered", "Dragon", "Bat", "Butterfly", "Moth", "Dragonfly", "Angel", "Bird",
                     "Insect", "Leathery", "Furry", "Flower", "Plant", "Rock", "Water", "Cloud", "Galaxy", 
-                    "Star", "Flame", "Beetle", "Futuristic", "Translucent", "Metal", "3 Pairs of Angel", 
-                    "2 Pairs of Angel" ]
+                    "Star", "Flame", "Beetle", "Futuristic", "Translucent", "Metal", "3 Pairs of Angel Wings", 
+                    "2 Pairs of Angel Wings" ]
+            return f"{size} {random.choice(size)} Wings ({random.choice(type)})"
+        return "None"
