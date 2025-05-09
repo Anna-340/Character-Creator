@@ -223,3 +223,6 @@ class CharacterCreator:
                     "Scorpion", "Morning-Star", "Club", "Dagger", "Horse", "Snake", "Split", "Axolotl", "Gator"]
             return f"{random.choice(size)}, {random.choice(type)} Tail"
         return "None"
+    
+    def character_magic_class(self):
+        return random.choice(list(TypeClass)).value
