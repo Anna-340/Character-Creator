@@ -286,4 +286,5 @@ class CharacterCreator:
         self.trait_value_label.config(text= self.trait_value)
 
         completed = len([t for t in self.character.keys() if t != "Quirk"])
-        total =
+        total = len([t for t in self.character.keys() if t != "Quirk"]) + completed
+        self.progress_label.config(text= f"Progress: {completed}/{total} Traits Completed")
