@@ -236,3 +236,6 @@ class CharacterCreator:
     def character_gender(self):
         return random.choice(["Male", "Female", "Nonbinary"])
     
+    def character_age(self):
+        return random.randint(18, 100)
+    
