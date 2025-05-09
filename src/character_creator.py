@@ -330,8 +330,8 @@ class CharacterCreator:
                 else:
                     ttk.Label(self.character_frame, text= "Hair: Bald", 
                               font= ("Arial", 11)).pack(anchor= tk.W, padx= 20, pady= 2)
+            elif trait == "Eye Color" and self.character.get("Has Eyes") == "No":
                 continue 
-
             elif trait != "Quirk":
                 ttk.Label(self.stats_frame, text= f"{trait}: {value}", 
                           font= ("Arial", 11)).pack(anchor= tk.W, padx= 20, pady= 2)
