@@ -295,4 +295,4 @@ class CharacterCreator:
 
     def accept_trait(self);
         self.character[self.current_trait] = self.trait_value
-        self,next_trait()
+        self.next_trait()
