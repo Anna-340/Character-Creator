@@ -247,3 +247,5 @@ class CharacterCreator:
     def character_quirk(self):
         return random.choice(self.quirks)
     
+    def character_stats(self):
+        return {stat: random.randint(1, 20) for stat in self.stats}
