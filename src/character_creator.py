@@ -319,6 +319,16 @@ class CharacterCreator:
         self.stats_frame.pack(fill= tk.BOTH, expand= True, pady= 5)
         self.quirk_frame.pack(fill= tk.BOTH, expand= True, pady= 5)
         
+        #clears everything to display stats for character  
+        for widget in self.character_frame.winfo_children():
+            widget.destroy()
+
+        for widget in self.stats_frame.winfo_children():
+            widget.destroy()
+
+        for widget in self.quirk_frame.winfo_children():
+            widget.destroy() 
+
         #add character traits and skips hair color if character is bald
         
         for trait, value in self.character.items():
