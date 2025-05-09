@@ -288,3 +288,8 @@ class CharacterCreator:
         completed = len([t for t in self.character.keys() if t != "Quirk"])
         total = len([t for t in self.character.keys() if t != "Quirk"]) + completed
         self.progress_label.config(text= f"Progress: {completed}/{total} Traits Completed")
+
+    def reroll_trait(self):
+        self.trait_value = self.generate_trait(self.current_trait)
+        self.trait_value_label.config(text= self.trait_value)
+         
