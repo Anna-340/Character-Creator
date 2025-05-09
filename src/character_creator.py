@@ -77,7 +77,7 @@ class CharacterCreator:
     def __init__(self, root):
         self.root = root
         self.root.title("Fantasy Character Creator! :D") 
-        self.root.geometry("800 x 700")
+        self.root.geometry("800x700")
 
         self.character = {}
         self.current_trait = "",
