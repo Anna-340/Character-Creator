@@ -341,3 +341,22 @@ class CharacterCreator:
             messagebox.showinfo(
                 "Character Complete! :D", 
                 "Your Character Has Been Created!\n\nClick 'Create Another Character' To Restart!")
+            
+    def restart_character(self):
+        #complete reset of traits
+        self.character_frame.pack_forget()
+        self.stats_frame.pack_forget()
+        self.quirk_frame.pack_forget()
+        self.start_over_button.pack_forget()
+
+        self.character = {}
+        self.traits = ["Gender", "Age", "Height", "Skin Color", "Hair", "Has Eyes", "Eye Color", "Evebrows",
+                       "Nose", "Lips", "Jawline", "Ears", "Horns", "Skin Texture", "Hands", "Wimgs", "Tail",
+                       "Magic Class", "Job", "Personality", "Quirk"]
+       
+        #shows trait selection for viewer
+        self.trait_frame.pack(fill= tk.X, pady= 10)
+        self.button_frame.pack(pady= 20)
+        self.progress_label.pack(pady= 10)
+
+        self.next_trait()
