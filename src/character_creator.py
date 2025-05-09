@@ -128,7 +128,7 @@ class CharacterCreator:
 
         #Progression of Character Traits
         self.progress_label = ttk.Label(self.main_frame, 
-                                        text= f"Progress; 0/{len(self.traits)} traits completed")
+                                        text= f"Progress; 0/{len(self.traits)} Traits Completed!")
         self.progress_label.pack(pady= 10)
 
         #The Character Display
