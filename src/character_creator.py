@@ -180,7 +180,7 @@ class CharacterCreator:
         return f"{random.choice(lip_thickness)}, {random.choice(shape)}"
     
     def character_jawline(self):
-        shape = ["Diamond", "Heart-Shaped", "Square", "Round", "Oval", "Triangular", "Oblong", "Narrow",]
+        shape = ["Diamond", "Heart-Shaped", "Square", "Round", "Oval", "Triangular", "Oblong", "Narrow"]
         return random.choice(shape)
         
     def character_ears(self):
