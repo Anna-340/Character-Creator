@@ -244,3 +244,6 @@ class CharacterCreator:
         inches = random.randint(3, 5) if feet < 6 else random.randint(4, 9)
         return f"{feet}'{inches}\""
     
+    def character_quirk(self):
+        return random.choice(self.quirks)
+    
