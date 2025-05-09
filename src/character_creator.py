@@ -262,3 +262,4 @@ class CharacterCreator:
                          "Tail": self.character_tail, "Magic Class": self.character_magic_class, 
                          "Job": self.character_job, "Personality": self.character_personality,
                          "Quirk": self.character_quirk}
+        return character_map[trait_name]()
