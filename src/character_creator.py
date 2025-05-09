@@ -270,4 +270,20 @@ class CharacterCreator:
             return
         
         self.current_trait = self.traits.pop(0)
-    
+
+        #skip hair color if character bald D:
+        if self.current_trait == "Hair Color" and self.character.get("Hair Length") == "Bald":
+            self.next_trait()
+            return 
+        
+        #skips eye color if character has no eyes D:
+        if self.current_trait == "Eye Color" and self.character.get("Has Eyes") == "No":
+            self.next_trait()
+            return
+        
+        self.trait_name_label.config(text= self.current_trait)
+        self.trait_value = self.generate_trait(self.current_trait)
+        self.trait_value_label.config(text= self.trait_value)
+
+        completed = len([t for t in self.character.keys() if t != "Quirk"])
+        total =
