@@ -204,8 +204,8 @@ class CharacterCreator:
             size = ["Small", "Medium", "Large", "Massive"]
             type = ["Crystal", "Withered", "Dragon", "Bat", "Butterfly", "Moth", "Dragonfly", "Angel", "Bird",
                     "Insect", "Leathery", "Furry", "Flower", "Plant", "Rock", "Water", "Cloud", "Galaxy", 
-                    "Star", "Flame", "Beetle", "Futuristic", "Translucent", "Metal", "3 Pairs of Angel Wings", 
-                    "2 Pairs of Angel Wings" ]
+                    "Star", "Flame", "Beetle", "Futuristic", "Translucent", "Metal", "3 Pairs Of Angel Wings", 
+                    "2 Pairs Of Angel Wings" ]
             return f"{random.choice(size)} Wings ({random.choice(type)})"
         return "None"
     
