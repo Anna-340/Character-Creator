@@ -323,7 +323,21 @@ class CharacterCreator:
                 ttk.Label(self.stats_frame, text= f"{trait}: {value}", 
                           font= ("Arial", 11)).pack(anchor= tk.W, padx= 20, pady= 2)
 
-         #adds in the stats for character ex.) Chrisma 20       
+         #adds in the stats for character ex.) Chrisma 20
+     
         for stat, value in self.character_numbers.items():
             ttk.Label(self.stats_frame, text= f"{stat}: {value}", 
                       font= ("Arial", 11)).pack(anchor= tk.W, padx= 20, pady= 2)
+            
+            #adds character quriks in diff formatting to make it different 
+            
+            quirk = self.character.get("Quirk", "No Notable Quirks")
+            ttk.Label(self.quirk_frame, text= f"Quirk: {quirk}", font= ("Arial", 11, "italic"),
+                      foreground= "blue").pack(anchor= tk.W, padx= 20, pady= 2)
+           
+            #start over button for artist
+            self.start_over_button.pack(pady= 20)
+
+            messagebox.showinfo(
+                "Character Complete! :D", 
+                "Your Character Has Been Created!\n\nClick 'Create Another Character' To Restart!")
