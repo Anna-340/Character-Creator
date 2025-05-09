@@ -292,4 +292,7 @@ class CharacterCreator:
     def reroll_trait(self):
         self.trait_value = self.generate_trait(self.current_trait)
         self.trait_value_label.config(text= self.trait_value)
-         
+
+    def accept_trait(self);
+        self.character[self.current_trait] = self.trait_value
+        self,next_trait()
