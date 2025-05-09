@@ -80,7 +80,7 @@ class CharacterCreator:
         self.root.geometry("800x700")
 
         self.character = {}
-        self.current_trait = "",
+        self.current_trait = ""
         self.traits = ["Gender", "Age", "Height", "Skin Color", "Hair", "Has Eyes", "Eye Color", "Evebrows",
                        "Nose", "Lips", "Jawline", "Ears", "Horns", "Skin Texture", "Hands", "Wimgs", "Tail",
                        "Magic Class", "Job", "Personality", "Quirk"]
