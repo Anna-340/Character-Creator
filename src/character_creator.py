@@ -261,8 +261,8 @@ class CharacterCreator:
     def generate_trait(self, trait_name):
         character_map = {"Gender": self.character_gender,"Age": self.character_age, 
                          "Height": self.character_height, "Skin Color": self.character_skin_tone, 
-                         "Hair Color": self.character_hair, 
-                         "Has Eyes": self.character_has_eyes, "EyeBrows": self.character_eyebrows, 
+                         "Hair": self.character_hair, "Has Eyes": self.character_has_eyes, 
+                         "Eyebrows": self.character_eyebrows, 
                          "Nose": self.character_nose, "Lips": self.character_lips, 
                          "Jawline": self.character_jawline, "Ears": self.character_ears,
                          "Horns": self.character_horns, "Skin Texture": self.character_skin_texture,
