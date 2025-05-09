@@ -50,7 +50,7 @@ class Jobs(Enum):
     SECURITY = "Security Guard"
     CLOWN = "Circus Act"
 
-    class PersonalTrait(Enum):
+    class PersonalityTraits(Enum):
         HAPPY = "Happy"
         DEPRESSED = "Depressed"
         ANXIOUS = "Anxious;"
