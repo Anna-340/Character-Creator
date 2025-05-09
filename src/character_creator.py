@@ -311,3 +311,14 @@ class CharacterCreator:
         self.stats_frame.pack(fill= tk.BOTH, expand= True, pady= 5)
         self.quirk_frame.pack(fill= tk.BOTH, expand= True, pady= 5)
         
+        #add character traits and skips hair color if character is bald
+        
+        for trait, value in self.character.items():
+            if trait == "Hair Length" and value == "Bald":
+                ttk.Label(self.character_frame, text= "Hair: Bald", 
+                          font= ("Arial", 11)).pack(anchor= tk.W, padx= 20, pady= 2)
+            elif trait == "Haur Color" and self.character.get("Hair Length") == "Bald":
+                continue 
+            elif trait != "Quirk":
+                ttk.Label(self.stats_frame, text= f"{trait}: {value}", 
+                          font= ("Arial", 11)).pack(anchor= tk.W, padx= 20, pady= 2)
