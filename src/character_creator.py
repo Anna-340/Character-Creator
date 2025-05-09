@@ -274,13 +274,13 @@ class CharacterCreator:
     
     def next_trait(self):
         if not self.traits:
-            self.show_character()
+            self.display_character()
             return
         
         self.current_trait = self.traits.pop(0)
 
         #skip hair color if character bald D:
-        if self.current_trait == "Hair Color" and self.character.get("Hair Length") == "Bald":
+        if self.current_trait == "Hair" and "Bald" in self.character.get("Hair", ""):
             self.next_trait()
             return 
         
@@ -293,9 +293,9 @@ class CharacterCreator:
         self.trait_value = self.generate_trait(self.current_trait)
         self.trait_value_label.config(text= self.trait_value)
 
-        completed = len([t for t in self.character.keys() if t != "Quirk"])
-        total = len([t for t in self.character.keys() if t != "Quirk"]) + completed
-        self.progress_label.config(text= f"Progress: {completed}/{total} Traits Completed")
+        completed = len(self.character)
+        total_traits = completed + len(self.traits)
+        self.progress_label.config(text= f"Progress: {completed}/{total_traits} Traits Completed")
 
     def reroll_trait(self):
         self.trait_value = self.generate_trait(self.current_trait)
