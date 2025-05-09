@@ -263,3 +263,8 @@ class CharacterCreator:
                          "Job": self.character_job, "Personality": self.character_personality,
                          "Quirk": self.character_quirk}
         return character_map[trait_name]()
+    
+    def next_trait(self):
+        if not self.traits:
+            self.show_character()
+            return
