@@ -188,7 +188,6 @@ class CharacterCreator:
     
     def character_horns(self):
         if random.random() < 0.25:
-    
             size = ["Small", "Medium", "Large"]
             type = ["Draconic", "Antler", "Goat", "Markhor", "Pronghorn", "Orix", "Jacob-Sheep", "Chousingha",
                     "Bharal", "Hartebeest", "Spike", "Muskox", "Gnu", "Tur", "Gazelle", "Ibex", "Moose",
@@ -197,7 +196,7 @@ class CharacterCreator:
         return "None"
     
     def character_wings(self):
-        if random.random() > .25:
+        if random.random() < .25:
             size = ["Small", "Medium", "Large", "Massive"]
             type = ["Crystal", "Withered", "Dragon", "Bat", "Butterfly", "Moth", "Dragonfly", "Angel", "Bird",
                     "Insect", "Leathery", "Furry", "Flower", "Plant", "Rock", "Water", "Cloud", "Galaxy", 
