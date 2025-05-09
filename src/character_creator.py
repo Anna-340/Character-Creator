@@ -239,3 +239,8 @@ class CharacterCreator:
     def character_age(self):
         return random.randint(18, 100)
     
+    def character_height(self):
+        feet = random.randint(3, 6)
+        inches = random.randint(3, 5) if feet < 6 else random.randint(4, 9)
+        return f"{feet}'{inches}\""
+    
