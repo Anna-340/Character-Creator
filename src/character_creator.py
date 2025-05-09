@@ -322,3 +322,8 @@ class CharacterCreator:
             elif trait != "Quirk":
                 ttk.Label(self.stats_frame, text= f"{trait}: {value}", 
                           font= ("Arial", 11)).pack(anchor= tk.W, padx= 20, pady= 2)
+
+         #adds in the stats for character ex.) Chrisma 20       
+        for stat, value in self.character_numbers.items():
+            ttk.Label(self.stats_frame, text= f"{stat}: {value}", 
+                      font= ("Arial", 11)).pack(anchor= tk.W, padx= 20, pady= 2)
