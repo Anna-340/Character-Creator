@@ -331,7 +331,7 @@ class CharacterCreator:
                     ttk.Label(self.character_frame, text= "Hair: Bald", 
                               font= ("Arial", 11)).pack(anchor= tk.W, padx= 20, pady= 2)
                 continue 
-            
+
             elif trait != "Quirk":
                 ttk.Label(self.stats_frame, text= f"{trait}: {value}", 
                           font= ("Arial", 11)).pack(anchor= tk.W, padx= 20, pady= 2)
@@ -363,8 +363,8 @@ class CharacterCreator:
         self.start_over_button.pack_forget()
 
         self.character = {}
-        self.traits = ["Gender", "Age", "Height", "Skin Color", "Hair", "Has Eyes", "Eye Color", "Evebrows",
-                       "Nose", "Lips", "Jawline", "Ears", "Horns", "Skin Texture", "Hands", "Wimgs", "Tail",
+        self.traits = ["Gender", "Age", "Height", "Skin Color", "Hair", "Has Eyes", "Eye Color", "Eyebrows",
+                       "Nose", "Lips", "Jawline", "Ears", "Horns", "Skin Texture", "Hands", "Wings", "Tail",
                        "Magic Class", "Job", "Personality", "Quirk"]
        
         #shows trait selection for viewer
