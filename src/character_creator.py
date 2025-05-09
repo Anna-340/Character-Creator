@@ -226,3 +226,6 @@ class CharacterCreator:
     
     def character_magic_class(self):
         return random.choice(list(TypeClass)).value
+    
+    def character_job(self):
+        return random.choice(list(Jobs)).value
