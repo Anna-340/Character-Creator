@@ -197,7 +197,7 @@ class CharacterCreator:
         return "None"
     
     def character_wings(self):
-        if random.random() < .25:
+        if random.random() < .25: #25% chance for wings :D
             size = ["Small", "Medium", "Large", "Massive"]
             type = ["Crystal", "Withered", "Dragon", "Bat", "Butterfly", "Moth", "Dragonfly", "Angel", "Bird",
                     "Insect", "Leathery", "Furry", "Flower", "Plant", "Rock", "Water", "Cloud", "Galaxy", 
@@ -268,3 +268,6 @@ class CharacterCreator:
         if not self.traits:
             self.show_character()
             return
+        
+        self.current_trait = self.traits.pop(0)
+    
