@@ -219,4 +219,7 @@ class CharacterCreator:
     def character_tail(self):
         if random.random() < .25:
             size = ["Small", "Medium", "Large"]
-            type = [""]
+            type = ["Feathered", "Scaled", "Shark", "Layered", "Deer", "Goldfish", "Cat", "Dog", "Lion", 
+                    "Scorpion", "Morning-Star", "Club", "Dagger", "Horse", "Snake", "Split", "Axolotl", "Gator"]
+            return f"{random.choice(size)}, {random.choice(type)} Tail"
+        return "None"
