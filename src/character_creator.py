@@ -285,7 +285,7 @@ class CharacterCreator:
             return 
         
         #skips eye color if character has no eyes D:
-        if self.current_trait == "Eye Color" and self.character.get("Has Eyes") == "No":
+        if self.current_trait == "Eye Color" and self.character.get("Has Eyes", "Yes") == "No":
             self.next_trait()
             return
         
