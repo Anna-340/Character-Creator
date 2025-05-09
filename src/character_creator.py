@@ -123,12 +123,12 @@ class CharacterCreator:
         self.button_frame = ttk.Frame(self.main_frame)
         self.button_frame.pack(pady= 20)
 
-        self.regenerate_button = ttk.Button(self.button_frame, text= "Re-roll Trait!", 
-                                            command=self.reroll_trait)
+        self.regenerate_button = ttk.Button(self.button_frame, text= "Re-Roll Trait!", 
+                                            command= self.reroll_trait)
         self.regenerate_button.pack(side= tk.LEFT, padx= 10)
 
         self.accept_button = ttk.Button(self.button_frame, text= "Accept Trait", command= self.accept_trait)
-        self.regenerate_button.pack(side= tk.LEFT, padx= 10)
+        self.accept_button.pack(side= tk.LEFT, padx= 10)
 
         #Progression of Character Traits
         self.progress_label = ttk.Label(self.main_frame, 
