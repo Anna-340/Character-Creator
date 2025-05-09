@@ -293,11 +293,11 @@ class CharacterCreator:
         self.trait_value = self.generate_trait(self.current_trait)
         self.trait_value_label.config(text= self.trait_value)
 
-    def accept_trait(self);
+    def accept_trait(self):
         self.character[self.current_trait] = self.trait_value
         self.next_trait()
 
-    def display_character(self);
+    def display_character(self):
         #hides traits selected 
         self.trait_frame.pack_forget()
         self.button_frame.pack_forget()
