@@ -71,7 +71,7 @@ class PersonalityTraits(Enum):
     CHILDISH = "Childish"
     PRIDEFUL = "Prideful"
     ARROGANT = "Arrogant"
-    MYSTERIOUS = "Mysterious."
+    MYSTERIOUS = "Mysterious"
 
 class CharacterCreator: 
     def __init__(self, root):
