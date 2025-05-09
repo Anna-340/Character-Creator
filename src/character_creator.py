@@ -233,3 +233,6 @@ class CharacterCreator:
     def character_personality(self):
         return random.choice(list(PersonalityTraits)).value
     
+    def character_gender(self):
+        return random.choice(["Male", "Female", "Nonbinary"])
+    
