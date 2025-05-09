@@ -106,7 +106,8 @@ class CharacterCreator:
         self.main_frame.pack(fill= tk.BOTH, expand= True)
 
         #The TITLE 
-        ttk.Label(self.main_frame, text= "Fantasy Character Creator! :D", font= ("Arial", 16, "bold")).pack(pady= 10)
+        ttk.Label(self.main_frame, text= "Fantasy Character Creator! :D", 
+                  font= ("Arial", 16, "bold")).pack(pady= 10)
 
         #Displaying Traits
         self.trait_frame = ttk.LabelFrame(self.main_frame, text= "Character Trait")
@@ -126,9 +127,12 @@ class CharacterCreator:
                                             command=self.reroll_trait)
         self.regenerate_button.pack(side= tk.LEFT, padx= 10)
 
+        self.accept_button = ttk.Button(self.button_frame, text= "Accept Trait", command= self.accept_trait)
+        self.regenerate_button.pack(side= tk.LEFT, padx= 10)
+
         #Progression of Character Traits
         self.progress_label = ttk.Label(self.main_frame, 
-                                        text= f"Progress; 0/{len(self.traits)} Traits Completed!")
+                                        text= f"Progress: 0/{len(self.traits)} Traits Completed!")
         self.progress_label.pack(pady= 10)
 
         #The Character Display
