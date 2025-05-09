@@ -303,4 +303,8 @@ class CharacterCreator:
         self.button_frame.pack_forget()
         self.progress_label.pack_forget()
 
-        
+        #generates character stats
+        self.character_numbers = self.character_stats
+
+        #character display
+        self.character_frame.pack(fill= tk,BOTH, )
