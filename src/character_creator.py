@@ -360,3 +360,8 @@ class CharacterCreator:
         self.progress_label.pack(pady= 10)
 
         self.next_trait()
+
+        if __name__ == "__main__":
+            root = tk.Tk()
+            app = CharacterCreator(root)
+            root.mainloop
