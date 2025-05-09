@@ -81,20 +81,21 @@ class CharacterCreator:
 
         self.character = {}
         self.current_trait = ""
-        self.traits = ["Gender", "Age", "Height", "Skin Color", "Hair", "Has Eyes", "Eye Color", "Evebrows",
-                       "Nose", "Lips", "Jawline", "Ears", "Horns", "Skin Texture", "Hands", "Wimgs", "Tail",
+        self.traits = ["Gender", "Age", "Height", "Skin Color", "Hair", "Has Eyes", "Eye Color", "Eyebrows",
+                       "Nose", "Lips", "Jawline", "Ears", "Horns", "Skin Texture", "Hands", "Wings", "Tail",
                        "Magic Class", "Job", "Personality", "Quirk"]
         
         self.stats = ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma", "Stealth"]
 
-        self.quirks = ["Snors louldy when sleeping", "Fidgets with thumbs when nervous", "Hums when thinking", 
-                       "Sticks tounge out when focused", "Talks to themselves", "Collects things off the ground",
-                       "Hates when people smack", "Always cold", "Always hot", "Always late", "Always early", 
-                       "Over complicates things", "Laughs at the wrong times", "Bad at remembering names", 
-                       "Obsessive with organizing thing", "Can't keep eye contact for long periods of time", 
-                        "Always pops their joints", "Fear of heights", "Scared of the dark", "Has a sweet tooth",
-                         "Judgey of others", "Sleepwalker", "Very blunt", "Nail biter", 
-                         "Steals other peoples food when they aren't looking"]
+        self.quirks = ["Snores Louldy When Sleeping", "Fidgets With Thumbs When Nervous", 
+                       "Hums When Thinking", "Sticks Tounge Out When Focused", "Talks To Themselves", 
+                       "Collects Things Off The Ground", "Hates When People Smack", "Always Cold", 
+                       "Always Hot", "Always Late", "Always Early", "Over Complicates Things", 
+                       "Laughs At The Wrong Time", "Bad At Remembering Names", 
+                       "Obsessive With Organizing Things","Can't Keep Eye Contact For Long Periods Of Time", 
+                       "Always Pop Their Joints", "Fear Of Heights", "Scared Of The Dark", 
+                       "Has A Sweet Tooth", "Judgey Of Others", "Sleepwalker", "Very Blunt", "Nail Biter", 
+                       "Steals Other Peoples Food When They Aren't Looking"]
         
         self.create_widgets()
         self.next_trait()
