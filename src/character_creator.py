@@ -195,7 +195,7 @@ class CharacterCreator:
             type = ["Draconic", "Antler", "Goat", "Markhor", "Pronghorn", "Orix", "Jacob-Sheep", "Chousingha",
                     "Bharal", "Hartebeest", "Spike", "Muskox", "Gnu", "Tur", "Gazelle", "Ibex", "Moose",
                     "Mule-Deer", "Bull", "Long", "Fallow-Deer", "Unicorn", "Sheep", "Mouflon", "Water-Buffalo"
-                    "2 Sets of", "3 Sets of"]
+                    "2 Sets Of", "3 Sets Of"]
             return f"{random.choice(size)}, {random.choice(type)} Horns"
         return "None"
     
