@@ -312,7 +312,7 @@ class CharacterCreator:
         self.progress_label.pack_forget()
 
         #generates character stats
-        self.character_numbers = self.character_stats
+        self.character_numbers = self.character_stats()
 
         #character display
         self.character_frame.pack(fill= tk.BOTH, expand= True, pady= 5)
