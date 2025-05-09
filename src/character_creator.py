@@ -296,3 +296,11 @@ class CharacterCreator:
     def accept_trait(self);
         self.character[self.current_trait] = self.trait_value
         self.next_trait()
+
+    def display_character(self);
+        #hides traits selected 
+        self.trait_frame.pack_forget()
+        self.button_frame.pack_forget()
+        self.progress_label.pack_forget()
+
+        
