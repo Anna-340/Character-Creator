@@ -53,7 +53,7 @@ class Jobs(Enum):
 class PersonalityTraits(Enum):
     HAPPY = "Happy"
     DEPRESSED = "Depressed"
-    ANXIOUS = "Anxious;"
+    ANXIOUS = "Anxious"
     EXTROVERTED = "Extroverted"
     INTROVERTED = "Introverted"
     LAIDBACK = "Laidback"
