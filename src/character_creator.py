@@ -229,3 +229,7 @@ class CharacterCreator:
     
     def character_job(self):
         return random.choice(list(Jobs)).value
+    
+    def character_personality(self):
+        return random.choice(list(PersonalityTraits)).value
+    
