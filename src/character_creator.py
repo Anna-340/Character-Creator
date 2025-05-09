@@ -122,11 +122,13 @@ class CharacterCreator:
         self.button_frame = ttk.Frame(self.main_frame)
         self.button_frame.pack(pady= 20)
 
-        self.regenerate_button = ttk.Button(self.button_frame, text= "Re-roll Trait!", command=self.regenerate_trait)
+        self.regenerate_button = ttk.Button(self.button_frame, text= "Re-roll Trait!", 
+                                            command=self.reroll_trait)
         self.regenerate_button.pack(side= tk.LEFT, padx= 10)
 
         #Progression of Character Traits
-        self.progress_label = ttk.Label(self.main_frame, text= f"Progress; 0/{len(self.traits)} traits completed")
+        self.progress_label = ttk.Label(self.main_frame, 
+                                        text= f"Progress; 0/{len(self.traits)} traits completed")
         self.progress_label.pack(pady= 10)
 
         #The Character Display
