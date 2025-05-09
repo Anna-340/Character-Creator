@@ -249,3 +249,16 @@ class CharacterCreator:
     
     def character_stats(self):
         return {stat: random.randint(1, 20) for stat in self.stats}
+    
+    def generate_trait(self, trait_name):
+        character_map = { "Gender": self.character_gender,"Age": self.character_age, 
+                         "Height": self.character_height, "Skin Color":, 
+                         "Hair Length":, "Hair Color":, 
+                         "Has Eyes":, "EyeBrows":, 
+                         "Nose":, "Lips":, 
+                         "Jawline":, "Ears":
+                         "Horns":, "Skin Texture";,
+                         "Hands":, "Wings":, 
+                         "Tail":, "Magic Class":, 
+                         "Job":, "Personality":,
+                         "Quirk":, }
