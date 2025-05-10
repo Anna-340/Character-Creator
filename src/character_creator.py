@@ -348,12 +348,20 @@ class CharacterCreator:
                 else:
                     ttk.Label(self.character_frame, text= f"Hair: {value}", 
                               font= ("Arial", 11)).pack(anchor= tk.W, padx= 20, pady= 2)
-            elif trait == "Eye Color":
-                if self.character.get("Has Eyes") == "No":
-                    continue 
-            elif trait != "Quirk":
-                ttk.Label(self.stats_frame, text= f"{trait}: {value}", 
+                    
+            elif trait == "Has Eyes":
+                eye_text = "Eyes: No" if value == "No" else "Eyes: Yes"
+                ttk.Label(self.character_frame, text= eye_text, 
                           font= ("Arial", 11)).pack(anchor= tk.W, padx= 20, pady= 2)
+                
+                if value == "Yes":
+                    ttk.Label(self.character_frame, 
+                              text= f"Eye Color: {self.character.get('Eye Color', 'Unknown')}",
+                              font= ("Arial", 11)).pack(anchor= tk.W, padx= 20, pady= 2)
+                    
+            elif trait not in ["Eye Color", "Quirk"] and trait not in self.stats:
+                ttk.Label(self.character_frame, text= f"{trait}: {value}",
+                         font= ("Arial", 11)).pack(anchor= tk.W, padx= 20, pady= 2)
 
          #adds in the stats for character ex.) Chrisma 20
      
