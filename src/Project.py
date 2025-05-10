@@ -4,7 +4,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 
 class TypeClass(Enum):
-    NONE = "No Magic(Villager)"
+    NONE = "No Magic (Villager)"
     WIZARD = "Wizard"
     SORCERER = "Sorcerer"
     WARLOCK = "Warlock"
