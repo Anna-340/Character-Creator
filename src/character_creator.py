@@ -248,11 +248,11 @@ class CharacterCreator:
         return random.choice(["Male", "Female", "Nonbinary"])
     
     def character_age(self):
-        return random.randint(18, 100)
+        return random.randint(10, 100)
     
     def character_height(self):
         feet = random.randint(3, 6)
-        inches = random.randint(3, 5) if feet < 6 else random.randint(4, 9)
+        inches = random.randint(0, 11)
         return f"{feet}'{inches}\""
     
     def character_quirk(self):
