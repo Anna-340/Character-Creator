@@ -96,7 +96,7 @@ class CharacterCreator:
                        "Obsessive With Organizing Things","Can't Keep Eye Contact For Long Periods Of Time", 
                        "Always Pops Their Joints", "Fear Of Heights", "Scared Of The Dark", 
                        "Has A Sweet Tooth", "Judgey Of Others", "Sleepwalker", "Very Blunt", "Nail Biter", 
-                       "Steals Other Peoples Food When They Aren't Looking"]
+                       "Steals Other People's Food When They Aren't Looking"]
         
         self.create_widgets()
         self.next_trait()
