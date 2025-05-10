@@ -54,6 +54,11 @@ class Jobs(Enum):
     MANUFACTURER = "Manufacturer"
     SCHOOL = "Student"
     PLUMBER = "Plumber"
+    TAXI = "Taxi Driver"
+    DURMIST = "Taxidermist"
+    THEATRE = "Theatre Kid"
+    CODE = "Programmer"
+    ETHICAL = "Ethical Hacker"
 
 class PersonalityTraits(Enum):
     HAPPY = "Happy"
