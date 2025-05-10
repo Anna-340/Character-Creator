@@ -43,7 +43,7 @@ class Jobs(Enum):
     DRAGON = "Dragon Tamer"
     BOTANIST = "Botanist"
     SMUGGLER = "Smuggler"
-    PLANTGROWER = "Marijuana and Shroom Grower"
+    PLANTGROWER = "Marijuana And Shroom Grower"
     KNIGHT = "Knight"
     ARTIST = "Artist"
     MERCHANT = "Merchant"
@@ -148,7 +148,7 @@ class CharacterCreator:
     def character_skin_tone(self):
         colors = ["Pale Blue", "Caramel", "Fair Skinned", "Milky", "Mocha", "Olive", "Tan", "Pale Pink",
                   "Light Gray", "Light Green", "Light Red", "Dark Blue", "Lavender", "Pale Orange",
-                  "Dark Blue", "Galaxy", "Rainbow", "Pale Blue Fading to Black at the Tips",
+                  "Dark Blue", "Galaxy", "Rainbow", "Pale Blue Fading To Black At The Tips",
                   "Turquoise", "Albaster", "Aubrun"]
         return random.choice(colors)
     
