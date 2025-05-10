@@ -14,4 +14,6 @@
 ###  - Week 15: write code for the different job types
 ###  - Week 16: write code for the different  traits/personality/weapon
 
+### Overall, I am very pleased with how this project turned out, I will definitely be using this and sharing this resource with my artist friends! Maybe in the future i'll add even more characteristics or even go as far as different races, and have certain traits realted to that specific race! 
+
 ## Link: https://github.com/Anna-340/Character-Creator
