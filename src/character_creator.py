@@ -371,16 +371,16 @@ class CharacterCreator:
             
             #adds character quriks in diff formatting to make it different 
             
-            quirk = self.character.get("Quirk", "No Notable Quirks")
-            ttk.Label(self.quirk_frame, text= f"Quirk: {quirk}", font= ("Arial", 11, "italic"),
-                      foreground= "blue").pack(anchor= tk.W, padx= 20, pady= 2)
+        quirk = self.character.get("Quirk", "No Notable Quirks")
+        ttk.Label(self.quirk_frame, text= f"Quirk: {quirk}", font= ("Arial", 11, "italic"),
+                    foreground= "blue").pack(anchor= tk.W, padx= 20, pady= 2)
            
             #start over button for artist
-            self.start_over_button.pack(pady= 20)
+        self.start_over_button.pack(pady= 20)
 
-            messagebox.showinfo(
-                "Character Complete! :D", 
-                "Your Character Has Been Created!\n\nClick 'Create Another Character' To Restart!")
+        messagebox.showinfo(
+            "Character Complete! :D", 
+            "Your Character Has Been Created!\n\nClick 'Create Another Character' To Restart!")
             
     def restart_character(self):
         #complete reset of traits
