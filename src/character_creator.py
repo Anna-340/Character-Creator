@@ -101,7 +101,6 @@ class CharacterCreator:
         self.next_trait()
     
     def create_widgets(self):
-
         self.main_frame = ttk.Frame(self.root, padding= "20") #The main frame
         self.main_frame.pack(fill= tk.BOTH, expand= True)
 
