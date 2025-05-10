@@ -78,6 +78,7 @@ class CharacterCreator:
         self.root = root
         self.root.title("Fantasy Character Creator! :D") 
         self.root.geometry("800x700")
+        self.root.protocol("WM_DELETE_WINDOW", self.close_app)
 
         self.character = {}
         self.current_trait = ""
