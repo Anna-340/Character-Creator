@@ -137,7 +137,7 @@ class CharacterCreator:
                                             command= self.reroll_trait)
         self.regenerate_button.pack(side= tk.LEFT, padx= 10)
 
-        self.accept_button = ttk.Button(self.button_frame, text= "Accept Trait", command= self.accept_trait)
+        self.accept_button = ttk.Button(self.button_frame, text= "Accept Trait!", command= self.accept_trait)
         self.accept_button.pack(side= tk.LEFT, padx= 10)
 
         #Progression of Character Traits
