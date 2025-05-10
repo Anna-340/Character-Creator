@@ -289,11 +289,6 @@ class CharacterCreator:
         
         self.current_trait = self.traits.pop(0)
 
-        #skip hair color if character bald D:
-        if self.current_trait == "Hair" and "Bald" in self.character.get("Hair", ""):
-            self.next_trait()
-            return 
-        
         #skips eye color if character has no eyes D:
         if self.current_trait == "Eye Color" and self.character.get("Has Eyes", "Yes") == "No":
             self.next_trait()
