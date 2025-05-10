@@ -49,6 +49,11 @@ class Jobs(Enum):
     MERCHANT = "Merchant"
     SECURITY = "Security Guard"
     CLOWN = "Circus Act"
+    TWITCH = "Twitch Streamer"
+    FIRE = "Firefighter"
+    MANUFACTURER = "Manufacturer"
+    SCHOOL = "Student"
+    PLUMBER = "Plumber"
 
 class PersonalityTraits(Enum):
     HAPPY = "Happy"
@@ -138,7 +143,7 @@ class CharacterCreator:
         #The Character Display
         self.character_frame = ttk.LabelFrame(self.main_frame, text= "Your Character!")
         self.stats_frame = ttk.LabelFrame(self.main_frame, text= "Character Stats!")
-        self.quirk_frame = ttk.LabelFrame(self.main_frame, text= "Character Quirk")
+        self.quirk_frame = ttk.LabelFrame(self.main_frame, text= "Character Quirk!")
 
         #Restart Button to create a new character!
 
