@@ -143,7 +143,10 @@ class CharacterCreator:
 
         self.start_over_button = ttk.Button(self.main_frame, text= "Create Another Character!", 
                                             command=self.restart_character)
-        
+    
+    def close_app(self):
+        self.root.destroy()
+
     def character_skin_tone(self):
         colors = ["Pale Blue", "Caramel", "Fair Skinned", "Milky", "Mocha", "Olive", "Tan", "Pale Pink",
                   "Light Gray", "Light Green", "Light Red", "Dark Blue", "Lavender", "Pale Orange",
