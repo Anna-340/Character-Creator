@@ -259,27 +259,30 @@ class CharacterCreator:
         return random.choice(self.quirks)
     
     def generate_trait(self, trait_name):
-        character_map = {"Gender": self.character_gender,
-                         "Age": self.character_age, 
-                         "Height": self.character_height, 
-                         "Skin Color": self.character_skin_tone, 
-                         "Hair": self.character_hair, 
-                         "Has Eyes": self.character_has_eyes,
-                         "Eye Color": self.character_eye_color, 
-                         "Eyebrows": self.character_eyebrows, 
-                         "Nose": self.character_nose, 
-                         "Lips": self.character_lips, 
-                         "Jawline": self.character_jawline, 
-                         "Ears": self.character_ears,
-                         "Horns": self.character_horns, 
-                         "Skin Texture": self.character_skin_texture,
-                         "Hands": self.character_hands, 
-                         "Wings": self.character_wings, 
-                         "Tail": self.character_tail, 
-                         "Magic Class": self.character_magic_class, 
-                         "Job": self.character_job, 
-                         "Personality": self.character_personality,
-                         "Quirk": self.character_quirk}
+        character_map = {
+            "Gender": self.character_gender,
+            "Age": self.character_age, 
+            "Height": self.character_height, 
+            "Skin Color": self.character_skin_tone, 
+            "Hair": self.character_hair, 
+            "Has Eyes": self.character_has_eyes,
+            "Eye Color": self.character_eye_color, 
+            "Eyebrows": self.character_eyebrows, 
+            "Nose": self.character_nose, 
+            "Lips": self.character_lips, 
+            "Jawline": self.character_jawline, 
+            "Ears": self.character_ears,
+            "Horns": self.character_horns, 
+            "Skin Texture": self.character_skin_texture,
+            "Hands": self.character_hands, 
+            "Wings": self.character_wings, 
+            "Tail": self.character_tail, 
+            "Magic Class": self.character_magic_class, 
+            "Job": self.character_job, 
+            "Personality": self.character_personality,
+            "Quirk": self.character_quirk
+            }
+        
         return character_map[trait_name]()
     
     def next_trait(self):
