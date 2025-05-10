@@ -160,7 +160,8 @@ class CharacterCreator:
                    "Sunset", "Honey", "Rose"]
         length = ["Bald", "Ear Tip Length", "Shoulder-Length", "Upper-Back", "Lower-Back", "Knee-Length", 
                   "Body-Length", "Short", "Medium", "Long"]
-        return f"{random.choice(colors)}, {random.choice(length)}"
+        choice = random.choice(length)
+        return "Bald" if choice == "Bald" else f"{choice}, {random.choice(colors)}"
     
     def character_eye_color(self):
         colors = ["Brown", "Green", "Blue", "Completely Black", "Completely White", "Hazel", "Amber", "Gray",
