@@ -94,7 +94,7 @@ class CharacterCreator:
                        "Always Hot", "Always Late", "Always Early", "Over Complicates Things", 
                        "Laughs At The Wrong Time", "Bad At Remembering Names", 
                        "Obsessive With Organizing Things","Can't Keep Eye Contact For Long Periods Of Time", 
-                       "Always Pop Their Joints", "Fear Of Heights", "Scared Of The Dark", 
+                       "Always Pops Their Joints", "Fear Of Heights", "Scared Of The Dark", 
                        "Has A Sweet Tooth", "Judgey Of Others", "Sleepwalker", "Very Blunt", "Nail Biter", 
                        "Steals Other Peoples Food When They Aren't Looking"]
         
