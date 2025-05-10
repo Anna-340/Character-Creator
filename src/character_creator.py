@@ -255,9 +255,6 @@ class CharacterCreator:
     def character_quirk(self):
         return random.choice(self.quirks)
     
-    def character_stats(self):
-        self.character_numbers = self.character_stats()
-    
     def generate_trait(self, trait_name):
         character_map = {"Gender": self.character_gender,"Age": self.character_age, 
                          "Height": self.character_height, "Skin Color": self.character_skin_tone, 
@@ -305,6 +302,9 @@ class CharacterCreator:
         self.character[self.current_trait] = self.trait_value
         self.next_trait()
 
+    def character_stats(self):
+        return {stat: random.randint(1,20) for stat in self.stats}
+
     def display_character(self):
         #hides traits selected 
         self.trait_frame.pack_forget()
@@ -338,10 +338,11 @@ class CharacterCreator:
                           font= ("Arial", 11)).pack(anchor= tk.W, padx= 20, pady= 2)
            
                 else:
-                    ttk.Label(self.character_frame, text= "Hair: Bald", 
+                    ttk.Label(self.character_frame, text= f"Hair: {value}", 
                               font= ("Arial", 11)).pack(anchor= tk.W, padx= 20, pady= 2)
-            elif trait == "Eye Color" and self.character.get("Has Eyes") == "No":
-                continue 
+            elif trait == "Eye Color":
+                if self.character.get("Has Eyes") == "No":
+                    continue 
             elif trait != "Quirk":
                 ttk.Label(self.stats_frame, text= f"{trait}: {value}", 
                           font= ("Arial", 11)).pack(anchor= tk.W, padx= 20, pady= 2)
