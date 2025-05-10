@@ -43,7 +43,7 @@ class Jobs(Enum):
     DRAGON = "Dragon Tamer"
     BOTANIST = "Botanist"
     SMUGGLER = "Smuggler"
-    PLANTGROWER = "Marijuana And Shroom Grower"
+    PLANTGROWER = "Herb Grower"
     KNIGHT = "Knight"
     ARTIST = "Artist"
     MERCHANT = "Merchant"
